@@ -26,6 +26,7 @@ public class SingleLinkedList {
             System.out.print(current.value + " ");
             current = current.next;
         }
+
     }
 
     static Node reverse(Node head) {
