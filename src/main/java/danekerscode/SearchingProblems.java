@@ -42,11 +42,24 @@ At the last line: an integer number X.
 Output:
 Print an element of the given array nearest to X. If there are several nearest
 numbers in the array, print any of them.*/
-        var val = Arrays.stream(arr)
+
+
+      /*  var val = Arrays.stream(arr)
                 .map(el -> el - a)
                 .map(Math::abs)
                 .min().getAsInt();
-        return val + a;
+        return val + a;*/
+
+        Arrays.sort(arr);
+        for (int i = 0; i < arr.length-1; i++) {
+            if (arr[i] < a && arr[i+1] > a){
+                return a + 1;
+            }
+        }
+
+        return arr[0] < a ? arr[0] : arr[arr.length - 1];
+
+
     }
 
 }
