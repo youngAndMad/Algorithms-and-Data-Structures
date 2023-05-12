@@ -22,20 +22,33 @@ public class SingleLinkedList {
 
         Node reversed = reverse(head);
         Node current = reversed;
+        print(current);
+        System.out.println(counter);
+    }
+
+    static int counter;
+
+    static void print(Node current){
         while (current != null) {
             System.out.print(current.value + " ");
             current = current.next;
         }
-
+        System.out.println();
     }
 
     static Node reverse(Node head) {
+        ++counter;
+
         if (head == null || head.next == null) {
             return head;
         }
+
         Node reversedList = reverse(head.next);
+        print(reversedList);
         head.next.next = head;
         head.next = null;
+
         return reversedList;
+
     }
 }
