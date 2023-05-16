@@ -1,4 +1,4 @@
-package danekerscode.FirstAssignment;
+package danekerscode.firstAssignment;
 
 import java.util.function.BiConsumer;
 import java.util.stream.IntStream;

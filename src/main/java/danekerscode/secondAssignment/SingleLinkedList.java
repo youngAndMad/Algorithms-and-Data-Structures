@@ -1,4 +1,4 @@
-package danekerscode.SecondAssignment;
+package danekerscode.secondAssignment;
 
 public class SingleLinkedList {
 

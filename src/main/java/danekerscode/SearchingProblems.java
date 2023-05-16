@@ -57,6 +57,15 @@ numbers in the array, print any of them.*/
             }
         }
 
+        /*
+        * int t = 1;
+        for (int i = 0; i < arr.length-1; i++) {
+            if (Math.abs(a - arr[i]) < min){
+                t = arr[i];
+            }
+        }
+        return t;*/
+
         return arr[0] < a ? arr[0] : arr[arr.length - 1];
 
 

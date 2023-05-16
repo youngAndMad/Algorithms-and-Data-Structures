@@ -1,4 +1,4 @@
-package danekerscode.SecondAssignment;
+package danekerscode.secondAssignment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
